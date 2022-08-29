@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".HomeFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#110C2D">
 
-</FrameLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontal_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#110C31"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_1"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_2"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_3"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_4"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_5"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ad_btn_6"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ad_2" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_ad_view">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/movie_category_tabLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="#최근개봉작"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="#현재상영작"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="#인기상영작"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="#별점높은순"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="#개봉예정작"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/movie_rv"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/movie_category_tabLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -5,19 +5,28 @@
       <map>
         <entry key="app/src/main/res/drawable/background_corner.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bottom_icon_color.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/home_custombtn.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/mobile_custom_btn.xml" value="0.115" />
+        <entry key="app/src/main/res/drawable/my_page_custom_btn.xml" value="0.1325" />
+        <entry key="app/src/main/res/drawable/my_page_gradient.xml" value="0.115" />
+        <entry key="app/src/main/res/drawable/reserve_custom_btn.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/reserve_custom_btn_2.xml" value="0.1565" />
         <entry key="app/src/main/res/drawable/top_menu.xml" value="0.103" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1712962962962963" />
         <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.1712962962962963" />
         <entry key="app/src/main/res/layout/drawer_layout.xml" value="0.6607142857142857" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1712962962962963" />
-        <entry key="app/src/main/res/layout/fragment_mobile.xml" value="0.11510416666666666" />
-        <entry key="app/src/main/res/layout/fragment_my.xml" value="0.1712962962962963" />
-        <entry key="app/src/main/res/layout/fragment_reserve.xml" value="0.1712962962962963" />
+        <entry key="app/src/main/res/layout/fragment_mobile.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_my.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_reserve.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_store.xml" value="0.1712962962962963" />
+        <entry key="app/src/main/res/layout/item_viewpager.xml" value="0.13953488372093023" />
         <entry key="app/src/main/res/layout/main_drawer_header.xml" value="0.1712962962962963" />
         <entry key="app/src/main/res/layout/main_toolbar.xml" value="0.1712962962962963" />
+        <entry key="app/src/main/res/layout/movie_list.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1712962962962963" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.23385416666666667" />
       </map>
     </option>
   </component>

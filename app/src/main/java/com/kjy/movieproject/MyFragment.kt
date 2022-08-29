@@ -1,6 +1,10 @@
 package com.kjy.movieproject
 
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.UnderlineSpan
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,5 +22,8 @@ class MyFragment : Fragment() {
     ): View? {
         binding = FragmentMyBinding.inflate(layoutInflater, container, false)
         return binding.root
+
+
+
     }
 }

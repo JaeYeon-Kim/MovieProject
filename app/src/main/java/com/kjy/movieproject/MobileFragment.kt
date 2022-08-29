@@ -11,7 +11,6 @@ class MobileFragment : Fragment() {
 
     lateinit var binding: FragmentMobileBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
